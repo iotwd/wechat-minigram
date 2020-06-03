@@ -1,0 +1,23 @@
+<!--pages/game/game.wxml-->
+<view class="container">
+  <!-- 欢迎提示 -->
+  <text>欢迎来到猜数字小游戏</text>
+
+  <!-- 游戏输入表单组件 -->
+  <form>
+
+    <block wx:if='{{isGaming}}'>
+      <input bindinput="getNumber" type="number" placeholder="请输入一个0-100的整数"></input>
+      <button bindtap="judgeNumber" type="primary">我猜</button>
+    </block>
+    <block wx:else>
+      <button bindtap="restartGame" type="primary">重新开始</button>
+    </block>
+
+  </form>
+
+
+  <!-- 游戏提示 -->
+  <text id="tip">{{tip}}</text>
+  <!-- </view> -->
+</view>

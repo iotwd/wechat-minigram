@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 画布区域 -->
+  <canvas canvas-id="clockCanvas">
+  </canvas>
+  <view class="text-clock">
+    <text class="eleClock">{{h}}:{{m}}:{{s}}</text>
+  </view>
+
+</view>

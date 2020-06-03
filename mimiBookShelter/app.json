@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/books/books"  
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "个人书橱"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,68 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 头部信息 -->
+  <view class="header">
+
+    <picker class="place" mode="region" bindchange="regionChange">
+      <view>{{region[1]}}{{region[2]}}</view>
+    </picker>
+
+    <text class="weather">{{weather.now.cond_txt}}</text>
+    <text class="temperature">{{weather.now.tmp}}°</text>
+  </view>
+  <!-- 未来天气 -->
+  <view class="future">
+    <view class="day">
+      <view class="theTime">今天：</view>
+      <view class="image">
+        <image src="/images/{{weather.daily_forecast[0].cond_code_d}}.png" mode="widthFix"></image>
+      </view>
+      <view class="theData"> {{weather.daily_forecast[0].cond_txt_d}} {{weather.daily_forecast[0].tmp_min}}° {{weather.daily_forecast[0].tmp_max}}° </view>
+    </view>
+
+    <view class="day">
+      <view class="theTime">明天：</view>
+      <view class="image">
+        <image src="/images/{{weather.daily_forecast[1].cond_code_d}}.png" mode="widthFix"></image>
+      </view>
+      <view class="theData"> {{weather.daily_forecast[1].cond_txt_d}} {{weather.daily_forecast[1].tmp_min}}° {{weather.daily_forecast[1].tmp_max}}° </view>
+    </view>
+
+    <view class="day">
+      <view class="theTime">后天：</view>
+      <view class="image">
+        <image src="/images/{{weather.daily_forecast[2].cond_code_d}}.png" mode="widthFix"></image>
+      </view>
+      <view class="theData"> {{weather.daily_forecast[2].cond_txt_d}} {{weather.daily_forecast[2].tmp_min}}° {{weather.daily_forecast[2].tmp_max}}° </view>
+    </view>
+  </view>
+  <!-- 友情提示 -->
+  <view class="suggestion">
+    <view class="current">今天当前{{weather.now.cond_txt}}，今日最高温度{{weather.daily_forecast[0].tmp_max}}°，最低温度{{weather.daily_forecast[0].tmp_min}}°</view>
+
+  </view>
+
+
+  <!-- 其他指数 -->
+  <view class="other">
+
+    <view class="bar">
+      <view class="box">日出：{{weather.daily_forecast[0].sr}} AM</view>
+      <view class="box">日落：{{weather.daily_forecast[0].ss}} PM </view>
+    </view>
+
+    <view class="bar">
+      <view class="box">降水概率：{{weather.daily_forecast[0].pop}}% </view>
+      <view class="box"> 湿度：{{weather.daily_forecast[0].hum}}% </view>
+    </view>
+
+    <view class="bar">
+      <view class="box"> 风速：{{weather.daily_forecast[0].wind_spd}}km/h </view>
+      <view class="box"> 风向：{{weather.daily_forecast[0].wind_dir}} </view>
+    </view>
+    <view class="bar">
+      <view class="box"> 压强：{{weather.now.pres}} hPa </view>
+      <view class="box"> 能见度：{{weather.daily_forecast[0].vis}}km </view>
+    </view>
+  </view>
+</view>

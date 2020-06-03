@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 视频播放区域 -->
+  <video id="myVideo" controls="true" src="{{src}}" wx:if="{{src}}.length>0"></video>
+
+  <view class="information">
+    <view class="current">正在播放：</view>
+    <view class="currentTitle">{{currentTitle}}</view>
+  </view>
+  <view class="support">
+     <image wx:for="{{supportSrc}}" wx:key="{{index}}" src="{{item}}"> </image>
+  </view>
+
+  <!-- 发送弹幕区 -->
+  <view class="danMu">
+
+    <input type="text" placeholder="在这里输入弹幕" bindinput="getDanmu"></input>
+
+    <button size="mini" bindtap="sendDanmu">发送弹幕</button>
+  </view>
+
+  <!-- 播放列表 -->
+  <scroll-view class="playList" scroll-y="true">
+    <view class="videoBar" wx:for="{{list}}" wx:key="{{index}}" bindtap="playVideo" data-url="{{item.videoUrl}}" data-title="{{item.title}}">
+      <image src="/images/play.png"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </scroll-view>
+
+
+</view>
+
+<!-- net::ERR_PROXY_CONNECTION_FAILED 错误 在设置 代理 选择不使用代理 -->

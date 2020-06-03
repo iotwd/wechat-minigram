@@ -1,0 +1,33 @@
+/**index.wxss**/
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.angle {
+  height: 200rpx;
+  text-align: center;
+}
+
+.bigText{
+  font-size: 24pt;
+  margin-bottom: 10rpx;
+}
+.smallText{
+  font-size: 12pt;
+  margin: 5rpx;
+}

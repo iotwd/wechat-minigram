@@ -1,0 +1,7 @@
+/**index.wxss**/
+
+.downloadContainer{
+
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,17 @@
+<!--index.wxml-->
+
+
+
+<view class="container">
+  <image src="/images/compass.png" mode="widthFix" style="transform:rotate({{rotate}}deg)">
+  </image>
+
+
+  <view class="information">
+    <text class="bigText">{{degree}}° {{direction}}</text>
+    <text class="smallText">北纬 {{latitude}} 东经 {{longtitude}}</text>
+    <text class="smallText">{{province}}{{city}}</text>
+    <text class="smallText">海拔 {{altitude}}米</text>
+  </view>
+
+</view>

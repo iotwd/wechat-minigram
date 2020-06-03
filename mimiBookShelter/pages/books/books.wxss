@@ -1,0 +1,46 @@
+/* pages/books/books.wxss */
+/* 下载蒙层 */
+.downloadContainer{
+  height: 40vh;  /* 自适应手机高度 */
+background-color: silver;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+/* 进度条 */
+progress{
+  width: 80%;
+
+}
+
+/* 图书管理 */
+.libraryContainer{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* 图书box */
+.box{
+  width: 33%;
+  height: 350rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+/* 图书封面 */
+image{
+
+  width:200rpx;
+  height:300rpx;
+}
+
+/* 图书标题 */
+text{
+  text-align: center;
+}

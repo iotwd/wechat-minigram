@@ -1,0 +1,6 @@
+<!--pages/about/about.wxml-->
+<view class="container"> 
+  <text>
+  猜数字小游戏-测试
+  </text>
+</view>

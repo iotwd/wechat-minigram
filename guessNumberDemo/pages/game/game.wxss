@@ -1,0 +1,9 @@
+/* pages/game/game.wxss */
+input{
+  margin: 30rpx;
+  height: 40rpx;
+}
+
+#tip{
+  height: 800rpx;
+}

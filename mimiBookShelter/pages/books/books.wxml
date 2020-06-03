@@ -1,0 +1,20 @@
+<!--pages/books/books.wxml-->
+<!-- 下载蒙层 -->
+<view class="downloadContainer" wx:if='{{isDownloading}}'>
+
+  <text>下载中</text>
+  <progress percent="{{percentNumber}}" stroke-width="8" active activeColor="green" active-mode="forward" show-info="true"></progress>
+
+</view>
+<!-- 图书管理 -->
+
+<view class="libraryContainer" wx:else>
+  <view class="box" wx:for="{{bookList}}" wx:key="book{{index}}" bindtap="readBook" data-id="{{item.id}}" data-file="{{item.fileUrl}}">
+
+    <image src="{{item.poster}}">
+    </image>
+    <text>{{item.title}}</text>
+
+  </view>
+
+</view>

@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index"
+
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "安徽师范大学口述校史",
+    "navigationBarTextStyle":"black"
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

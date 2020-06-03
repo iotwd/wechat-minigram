@@ -1,0 +1,118 @@
+/**index.wxss**/
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.header {
+  height: 250rpx;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 地区设置 */
+
+.header .place {
+  width: 90%;
+  font-size: 40rpx;
+}
+
+/* 天气设置 */
+
+.header .weather {
+  width: 90%;
+  font-size: 30rpx;
+}
+
+/* 温度设置 */
+
+.header .temperature {
+  width: 90%;
+  font-size: 90rpx;
+}
+
+/* 未来天气 */
+
+.future {
+  width: 90%;
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.future .day {
+  height: 75rpx;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.day .theTime {
+  padding: 13rpx;
+  width: 100rpx;
+}
+
+.day .image {
+  width: 40px;
+  padding: 8rpx;
+}
+
+.image image {
+  width: 60rpx;
+  margin-left: 11rpx;
+}
+
+.day .theData {
+  padding: 13rpx;
+  width: 230;
+}
+
+/* 建议 */
+
+.suggestion {
+  width: 90%;
+  height: 100rpx;
+}
+
+.suggestion .current {
+  width: 80%;
+  margin-top: 7rpx;
+  margin-left: 70rpx;
+}
+
+/* 其他天气情况 */
+
+.other {
+  width: 90%;
+  align-items: left;
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.other .bar {
+  height: 75rpx;
+  margin-left: 60rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bar .box {
+  text-align: left;
+  width: 50%;
+  margin: 10rpx;
+}
